@@ -12,20 +12,9 @@ export default function Home() {
     <div className="w-full h-screen flex justify-center items-center dark:bg-[#0F172A]">
       <div>
         <span className="mr-4">
-          <span className="text-6xl dark:text-gray-50">{date.getHours()}</span>
-          <span className="text-2xl dark:text-gray-50">h</span>
-        </span>
-        <span className="mr-4">
           <span className="text-6xl dark:text-gray-50">
-            {date.getMinutes()}
+            {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}
           </span>
-          <span className="text-2xl dark:text-gray-50">m</span>
-        </span>
-        <span className="mr-4">
-          <span className="text-6xl dark:text-gray-50">
-            {date.getSeconds()}
-          </span>
-          <span className="text-2xl dark:text-gray-50">s</span>
         </span>
       </div>
     </div>
