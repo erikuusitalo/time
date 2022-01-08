@@ -13,7 +13,9 @@ export default function Home() {
       <div>
         <span className="mr-4">
           <span className="text-6xl dark:text-gray-50">
-            {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}
+            {String(date.getHours()).padStart(2, "0")}:
+            {String(date.getMinutes()).padStart(2, "0")}:
+            {String(date.getSeconds()).padStart(2, "0")}
           </span>
         </span>
       </div>
